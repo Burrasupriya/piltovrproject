@@ -1,10 +1,12 @@
-import '../globals.css';
+import Image from 'next/image'; // Import the Image component from next/image
+import '../globals.css'; // Import the globals.css file
+
 export default function Bhimavaram() {
     return (
-      <div className='brm'>
-           <div className="navbar">
+        <div className='brm'> {/* Use the 'brm' class name */}
+            <div className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="College Logo" />
+                    <Image src="/logo.png" alt="College Logo" width={100} height={100} /> {/* Use the Image component */}
                 </div>
                 <nav>
                     <ul>
@@ -25,14 +27,12 @@ export default function Bhimavaram() {
                 </nav>
             </div>
             <div className="content">
-                
                 <div className="main-content">
-                    <h1>hyderabad branch</h1>
-                    <img src="/vishnu.jpg" alt="Vishnu Educational Society" style={{ width: '80%', maxWidth: '600px', height: 'auto', borderRadius: '10px' }} />
-                    <h1>hyderabad branch</h1>
+                    <h1>Bhimavaram Branch</h1> {/* Change text to reflect the correct branch */}
+                    <Image src="/vishnu.jpg" alt="Vishnu Educational Society" width={600} height={400} /> {/* Use the Image component */}
+                    <h1>Bhimavaram Branch</h1> {/* Change text to reflect the correct branch */}
                 </div>
             </div>
-      </div>
+        </div>
     );
-  }
-  
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; // Import Image component from next/image
 import './globals.css';
 
 const Home = () => {
@@ -6,7 +7,8 @@ const Home = () => {
         <div>
             <div className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="College Logo" />
+                    {/* Replace <img> with <Image> */}
+                    <Image src="/logo.png" alt="College Logo" width={100} height={100} />
                 </div>
                 <nav>
                     <ul>
@@ -39,7 +41,8 @@ const Home = () => {
                     </ul>
                 </div>
                 <div className="main-content">
-                    <img src="/vishnu.jpg" alt="Vishnu Educational Society" style={{ width: '80%', maxWidth: '600px', height: 'auto', borderRadius: '10px' }} />
+                    {/* Replace <img> with <Image> */}
+                    <Image src="/vishnu.jpg" alt="Vishnu Educational Society" width={600} height={400} />
                 </div>
             </div>
         </div>
