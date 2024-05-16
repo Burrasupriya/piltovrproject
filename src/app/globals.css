@@ -1,0 +1,157 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: plum; /* Semi-transparent black background */
+    padding: 20px;
+    position: fixed; /* Fix the navbar at the top of the viewport */
+    width: 100%; /* Occupy full width of the viewport */
+    z-index: 2; /* Ensure navbar appears above other content */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.navbar .logo {
+    margin-right: 20px; /* Add margin between logo and nav items */
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
+.navbar nav ul li {
+    margin-left: 20px; /* Add space between navbar items */
+}
+
+/* Style the buttons */
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: orange; /* Set the background color to orange */
+}
+
+/* Style the Departments button */
+.navbar .dropdown span {
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: orange; /* Set the background color to orange */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: -200px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align items vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Adjust padding for list items */
+.dropdown-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: lightgray;
+    height: calc(100vh - 60px); /* Adjust height to fit the remaining viewport */
+    position: fixed;
+    top: 60px; /* Position below the navbar */
+    left: 0;
+    padding: 20px;
+    z-index: 1; /* Ensure sidebar appears below navbar */
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Align sidebar and main content horizontally */
+}
+
+.main-content {
+    flex-grow: 1; /* Allow main content to grow and fill remaining space */
+    padding: 20px;
+    z-index: 0; /* Ensure main content appears below navbar and sidebar */
+    margin-left: 220px;
+}
+
+/* Added styles */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Set light pink background */
+}
+
+/* Set light pink navbar */
+.navbar {
+    background-color: #ff99cc;
+}
+
+/* Set white sidebar background */
+.sidebar {
+    background-color: #fff;
+}
+
+/* Set white main content background */
+.main-content {
+    background-color: #fff;
+}
+.hyd{
+    background-color: aqua;
+}
+.brm{
+    background-color: rgb(0, 255, 34);
+}
