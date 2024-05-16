@@ -5,7 +5,7 @@ export default function Contact() {
     <div style={{ backgroundColor: 'bisque', padding: '20px' }}>
       <h1 style={{ textAlign: 'center' }}>Contact Us</h1>
       <p style={{ fontSize: '18px', textAlign: 'center' }}>
-        We'd love to hear from you! Feel free to reach out with any questions, comments, or concerns.
+        We&apos;d love to hear from you! Feel free to reach out with any questions, comments, or concerns.
       </p>
       <div style={{ textAlign: 'center' }}>
         <p>Address: 123 Main Street, City, Country</p>
