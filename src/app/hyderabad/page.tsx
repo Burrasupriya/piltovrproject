@@ -6,7 +6,7 @@ export default function Hyderabad() {
         <div className='hyd'> {/* Use the 'hyd' class name */}
             <div className="navbar">
                 <div className="logo">
-                    <Image src="/logo.png" alt="College Logo" width={100} height={100} /> {/* Use the Image component */}
+                    <Image src="/logo.jpg" alt="College Logo" width={100} height={100} /> {/* Use the Image component */}
                 </div>
                 <nav>
                     <ul>
@@ -28,9 +28,9 @@ export default function Hyderabad() {
             </div>
             <div className="content">
                 <div className="main-content">
-                    <h1>Hyderabad Branch</h1>
+                   
                     <Image src="/vishnu.jpg" alt="Vishnu Educational Society" width={600} height={400} /> {/* Use the Image component */}
-                    <h1>Hyderabad Branch</h1>
+                    
                 </div>
             </div>
         </div>

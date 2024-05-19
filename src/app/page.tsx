@@ -8,23 +8,25 @@ const Home = () => {
             <div className="navbar">
                 <div className="logo">
                     {/* Replace <img> with <Image> */}
-                    <Image src="/logo.png" alt="College Logo" width={100} height={100} />
+                    <Image src="/logo.jpg" alt="College Logo" width={100} height={100} />
                 </div>
                 <nav>
                     <ul>
                         <li><a href="/about">About</a></li>
                         <li><a href="/contact_us">Contact</a></li>
                         {/* Departments Dropdown */}
-                        <div className='dropdown'>
+                        <li><a href="/student">students</a></li>
+                        <li className='dropdown'>
                             <span style={{ fontSize: '15px', cursor: 'pointer' }}>Departments</span>
                             <div className='dropdown-content'>
-                                <ul style={{ listStyleType: 'none' }}>
+                                <ul>
                                     <li><a href="#">CSE</a></li>
                                     <li><a href="#">IT</a></li>
                                 </ul>
                             </div>
-                        </div>
-                        <li><a href="/login">Login</a></li>
+                        </li>
+                        <li><a href="./login">Login</a></li>
+                        <li><a href="./signup">Signup</a></li>
                     </ul>
                 </nav>
             </div>

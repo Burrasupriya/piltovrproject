@@ -1,3 +1,7 @@
+
+
+
+
 "use client";
 
 import React, { useState } from 'react';
@@ -10,7 +14,7 @@ type Student = {
     mobile: number;
 };
 
-export default function Login() {
+export default function student() {
     const [formData, setFormData] = useState({ id: '', name: '' });
     const [students, setStudents] = useState<Student[]>([]);
     const [error, setError] = useState<string | null>(null);
@@ -74,3 +78,5 @@ export default function Login() {
         </div>
     );
 }
+
+  

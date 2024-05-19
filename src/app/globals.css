@@ -2,48 +2,50 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box;
 }
 
 /* Set font family and size */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffe6f2; /* Set light pink background */
+    background-color: #ffe6f2;
+    padding-top: 80px; /* Push content below the fixed navbar */
 }
 
 /* Navbar styles */
 .navbar {
-    background-color: #ff99cc; /* Set light pink navbar */
+    background-color: #ff99cc;
     padding: 20px;
-    position: fixed; /* Fix the navbar at the top of the viewport */
-    width: 100%; /* Occupy full width of the viewport */
-    z-index: 2; /* Ensure navbar appears above other content */
+    position: fixed;
+    top: 0; /* Fix the navbar at the top */
+    width: 100%;
+    z-index: 10; /* Ensure navbar is above all other content */
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 .navbar .logo {
-    margin-right: 20px; /* Add margin between logo and nav items */
+    margin-right: 20px;
 }
 
 .navbar nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to align items horizontally */
+    display: flex;
 }
 
 .navbar nav ul li {
-    margin-left: 20px; /* Add space between navbar items */
+    margin-left: 20px;
+    position: relative; /* Ensure dropdown is positioned relative to parent */
 }
 
-/* Style the buttons */
 .navbar nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: orange; /* Set the background color to orange */
+    background-color: orange;
 }
 
 /* Style the Departments button */
@@ -52,15 +54,10 @@ body {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: orange; /* Set the background color to orange */
+    background-color: orange;
 }
 
 /* Dropdown styles */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -72,19 +69,18 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
-    z-index: 1;
-    margin-left: -200px;
+    z-index: 5;
+    top: 100%; /* Position dropdown below the parent */
 }
 
 .dropdown-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flexbox to align items vertically */
-    flex-direction: column; /* Stack items vertically */
+    display: flex;
+    flex-direction: column;
 }
 
-/* Adjust padding for list items */
 .dropdown-content li {
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
@@ -101,29 +97,40 @@ body {
 /* Sidebar styles */
 .sidebar {
     width: 200px;
-    background-color: #fff; /* Set white sidebar background */
-    height: calc(100vh - 60px); /* Adjust height to fit the remaining viewport */
+    background-color: #fff;
+    height: calc(100vh - 80px); /* Adjusted height to fit below navbar */
     position: fixed;
-    top: 60px; /* Position below the navbar */
+    top: 150px; /* Position below the navbar */
     left: 0;
     padding: 20px;
-    z-index: 1; /* Ensure sidebar appears below navbar */
+    z-index: 5; /* Ensure it appears above main content but below navbar */
+    overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 /* Main content styles */
 .main-content {
-    flex-grow: 1; /* Allow main content to grow and fill remaining space */
+    margin-left: 220px; /* Adjusted margin to accommodate sidebar */
     padding: 20px;
-    z-index: 0; /* Ensure main content appears below navbar and sidebar */
-    margin-left: 220px;
-    background-color: #fff; /* Set white main content background */
+    background-color: #fff;
+    min-height: calc(100vh - 80px); /* Ensure it takes up full height minus navbar */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
-/* Added styles */
-.hyd {
-    background-color: aqua;
+/* Vishnu image styles */
+.vishnu-image {
+    width: calc(100% - 220px); /* Adjusted width to fit beside sidebar */
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ensure the image starts below the navbar */
 }
-
-.brm {
-    background-color: rgb(0, 255, 34);
+.hyd{
+    background-color: aquamarine;
+}
+.brm{
+    background-color: green;
 }

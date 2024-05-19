@@ -6,7 +6,7 @@ export default function Bhimavaram() {
         <div className='brm'> {/* Use the 'brm' class name */}
             <div className="navbar">
                 <div className="logo">
-                    <Image src="/logo.png" alt="College Logo" width={100} height={100} /> {/* Use the Image component */}
+                    <Image src="/logo.jpg" alt="College Logo" width={100} height={100} /> {/* Use the Image component */}
                 </div>
                 <nav>
                     <ul>
